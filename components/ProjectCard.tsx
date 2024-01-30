@@ -6,9 +6,10 @@ interface Props {
     image: string;
     title: string;
     text: string;
+    link: string;
 }
 
-const ProjectCard = ({ image, title, text}: Props) => {
+const ProjectCard = ({ image, title, text,link}: Props) => {
     const [isFlipped, setIsFlipped] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false)
 
